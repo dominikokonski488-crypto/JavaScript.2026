@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Użycie funkcji</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div style="color: navy; font-size: 30px;">
+        <script>
+            var a = parseFloat(prompt("a=", ""));
+            var b = parseFloat(prompt("b=", ""));
+
+            function suma_oko(a, b) {
+                return a + b;
+            }
+
+            function odejmowanie_oko(a, b) {
+                return a - b;
+            }
+
+            function mnozenie_oko(a, b) {
+                return a * b;
+            }
+
+            function od_kwadratu_oko(a, b) {
+                document.write("od kwadratu a = " + (a * a) + "<br>");
+                document.write("od kwadratu b = " + (b * b) + "<br>");
+            }
+
+            function reszta_z_dzielenia_oko(a, b) {
+                return a % b;
+            }
+
+            document.write("a = " + a + "<br>");
+            document.write("b = " + b + "<br>");
+            document.write("suma = " + suma_oko(a, b) + "<br>");
+            document.write("odejmowanie = " + odejmowanie_oko(a, b) + "<br>");
+            document.write("mnożenie = " + mnozenie_oko(a, b) + "<br>");
+            od_kwadratu_oko(a, b);
+            document.write("reszta z dzielenia = " + reszta_z_dzielenia_oko(a, b) + "<br>");
+        </script>
+    </div>
+</body>
+</html>
