@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>zad.19_kod</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f3f3f3; padding: 20px; }
+        textarea { width: 100%; height: 500px; font-size: 16px; font-family: Consolas, monospace; }
+    </style>
+</head>
+<body>
+    <h2>Zadanie 19 - kod</h2>
+    <textarea readonly>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<script type="text/javascript">
+ function pole_Okon()
+ {
+var a_Okon= parseFloat(document.getElementById('dlugosc').value);
+var b= a_Okon*a_Okon;
+ document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b.toFixed(2)+" cm^2";
+ }
+ function obwod_Okon()
+ {
+var a_Okon= parseFloat(document.getElementById('dlugosc').value);
+var b= 4*a_Okon;
+ document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b.toFixed(2)+" cm";
+ }
+</script>
+ <h1>Wszystko o KWADRACIE</h1><br><br>
+ Podaj długość boku: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br>
+ <input type="button" name="pole" value="Oblicz pole" Onclick="pole_Okon()"><br><br>
+ <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_Okon()"><br><br>
+ <div style="color:red;font-size:50px;"id="nazwa"></div>
+</body>
+</html>
+    </textarea>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>zad.16_kod</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f3f3f3; padding: 20px; }
+        textarea { width: 100%; height: 500px; font-size: 16px; font-family: Consolas, monospace; }
+    </style>
+</head>
+<body>
+    <h2>Zadanie 16 - kod</h2>
+    <textarea readonly>
+<html>
+    <head>
+        <title>Zad.16</title>
+    </head>
+    <body>
+        <div style="color: rgb(19, 6, 138); font-size: 50px;">
+            <script>
+                var liczba1_Oko = prompt("Podaj pierwsza liczbe: ", "");
+                var liczba2_Oko = prompt("Podaj druga liczbe: ", "");
+                var a_Oko = parseFloat(liczba1_Oko);
+                var b_Oko = parseFloat(liczba2_Oko);
+
+                var m_Oko = a_Oko * a_Oko * a_Oko + 3 * a_Oko * a_Oko * b_Oko + 3 * a_Oko * b_Oko * b_Oko + b_Oko * b_Oko * b_Oko;
+
+                document.write("A=" + a_Oko + "<br>");
+                document.write("B=" + b_Oko + "<br>");
+                document.write("Wzor=(" + a_Oko + "+" + b_Oko + ")³=" + a_Oko + "³+3*" + a_Oko + "²*" + b_Oko + "+3*" + a_Oko + "*" + b_Oko + "²+" + b_Oko + "³<br>");
+                document.write("Wzor=" + m_Oko + "<br>");
+            </script>
+        </div>
+    </body>
+</html>
+    </textarea>
+</body>
+</html>
