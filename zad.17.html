@@ -1,19 +1,51 @@
 <html>
     <head>
-        <title>proste obliczenia</title>
         <meta charset="UTF-8">
+        <title>Zadanie 17</title>
     </head>
     <body>
-        <div style="color: red; font-size: 50px;">
-            <script>
-                var liczba1 = prompt("A=", "");
-                var A_Okon = parseFloat(liczba1);
-                var liczba2 = prompt("B=", "");
-                var B_Okon = parseFloat(liczba2);
-                document.write("A=" + A_Okon + " B=" + B_Okon + "<br>");
-                document.write("("+A_Okon+" + "+B_Okon+")^3="+"("+A_Okon+" + "+B_Okon+")^3="+Math.pow((A_Okon+B_Okon),3));
-            </script>
-        </div>
-    <input type="button" value="zamknij okno" onclick="window.close()"/>
-</body>
+       
+        <h3>1. Cztery sposoby wyprowadzania danych w JavaScript</h3>
+        <ul>
+            <li>z użyciem dokument.write()</li>
+            <li>z użyciem okienka alert()</li>
+            <li>do okienek formularza</li>
+            <li>do tabeli</li>
+        </ul>
+
+        <h3>Co to jest funkcja?</h3>
+        <ul>
+            <li>Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy</li>
+            <li>Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod,</li>
+            <li>Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np.suma_kry(a, b),</li>
+            <li>Może(nie zawsze) zwrócić obliczoną wartość zapisaną po słowie kluczowym return.</li>
+        </ul>
+
+        <h3>Wybrane metody obiektu document</h3>
+        <table border="1">
+            <tr>
+                <th>Metoda</th>
+                <th>Opis</th>
+            </tr>
+            <tr>
+                <td>getElementById("id")</td>
+                <td>dostęp do wszystkich elementów o konkretnej wartości atrybutu id </td>
+            </tr>
+            <tr>
+                <td>getElementsByName("nazwa")</td>
+                <td>dostęp do wszystkich elementów o typie znacznika, np. P lub DIV </td>
+            </tr>
+            <tr>
+                <td>getElementsByTagName("znacznik")</td>
+                <td>dostęp do wszystkich elementów o konkretnej wartości atrybutu</td>
+            </tr>
+        </table>
+
+        <h3>4. Właściwości innerHTML, innerText i className</h3>
+        <ul>
+            <li>- innerHTML – jest to właściwość, która umożliwia odczyt, zmodyfikowanie, wstawienie, albo usunięcie kodu HTML z danego elementu HTML np. w tabeli,</li>
+            <li>- innerText – umożliwia określenie ciągu znaków który zostanie umieszczony w elemencie</li>
+            <li>- className – umożliwia określenie klasy CSS użytej do prezentacji elementu.</li>
+        </ul>
+    </body>
 </html>

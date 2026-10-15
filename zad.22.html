@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>
+  obliczenia pola i obwodu prostokata
+</title>
+ <script language="JavaScript">
+function Pole_OKO(a_OKO,b_OKO)
+{
+ a_OKO_liczba=parseFloat(a_OKO)
+ b_OKO_liczba=parseFloat(b_OKO)
+ Pole_OKO_wynik=a_OKO_liczba*b_OKO_liczba
+ document.getElementsByName('pole')[0].value=Pole_OKO_wynik.toFixed(2);
+ alert("Pole="+Pole_OKO_wynik.toFixed(2));
+ wyprowadz_pole_OKO.innerHTML="Pole="+Pole_OKO_wynik.toFixed(2)+"<br>";
+}
+function Obw_OKO(a_OKO,b_OKO)
+{
+ a_OKO_liczba=parseFloat(a_OKO)
+ b_OKO_liczba=parseFloat(b_OKO)
+ Obw_OKO_wynik=2*a_OKO_liczba+2*b_OKO_liczba
+ document.getElementsByName('obw')[0].value=Obw_OKO_wynik.toFixed(2);
+ alert("Obw="+Obw_OKO_wynik.toFixed(2));
+ wyprowadz_obw_OKO.innerHTML="Obw="+Obw_OKO_wynik.toFixed(2)+"<br>";
+}
+ </script>
+</head>
+<body>
+Obliczanie pola i obwodu prostokata
+<br> <br>
+<form name="formularz" action="..." onsubmit="Pole_OKO(this.a_dana_OKO.value,this.b_dana_OKO.value);
+Obw_OKO(this.a_dana_OKO.value,this.b_dana_OKO.value);return false">
+ Podaj a=
+ <input size="6" name="a_dana_OKO">
+ Podaj b=
+ <input size="6" name="b_dana_OKO">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ Pole=
+ <input size="6" name="pole">
+ Obw=
+ <input size="6" name="obw">
+</form>
+<table>
+ <tr id="wyprowadz_pole_OKO"></tr>
+ <tr id="wyprowadz_obw_OKO"></tr>
+</table>
+</body>
+</html>
