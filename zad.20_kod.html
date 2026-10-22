@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>zad.20_kod</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f3f3f3; padding: 20px; }
+        textarea { width: 100%; height: 500px; font-size: 16px; font-family: Consolas, monospace; }
+    </style>
+</head>
+<body>
+    <h2>Zadanie 20 - kod</h2>
+    <textarea readonly>
+<html>
+<head>
+ <meta charset="UTF-8">
+</head>
+<body>
+<script type="text/javascript">
+ function AB_OKO()
+ {
+var xa_oko = parseFloat(document.getElementById('xa_oko').value);
+var ya_oko = parseFloat(document.getElementById('ya_oko').value);
+var xb_oko = parseFloat(document.getElementById('xb_oko').value);
+var yb_oko = parseFloat(document.getElementById('yb_oko').value);
+var ab = Math.sqrt(Math.pow((xa_oko-xb_oko),2)+Math.pow((ya_oko-yb_oko),2));
+ document.getElementById('nazwa').innerHTML = 'Oko A-B = ' + ab.toFixed(2);
+ }
+
+ function BC_OKO()
+ {
+var xb_oko = parseFloat(document.getElementById('xb_oko').value);
+var yb_oko = parseFloat(document.getElementById('yb_oko').value);
+var xc_oko = parseFloat(document.getElementById('xc_oko').value);
+var yc_oko = parseFloat(document.getElementById('yc_oko').value);
+var bc = Math.sqrt(Math.pow((xb_oko-xc_oko),2)+Math.pow((yb_oko-yc_oko),2));
+ document.getElementById('nazwa').innerHTML = 'Oko B-C = ' + bc.toFixed(2);
+ }
+
+ function AC_OKO()
+ {
+var xa_oko = parseFloat(document.getElementById('xa_oko').value);
+var ya_oko = parseFloat(document.getElementById('ya_oko').value);
+var xc_oko = parseFloat(document.getElementById('xc_oko').value);
+var yc_oko = parseFloat(document.getElementById('yc_oko').value);
+var ac = Math.sqrt(Math.pow((xa_oko-xc_oko),2)+Math.pow((ya_oko-yc_oko),2));
+ document.getElementById('nazwa').innerHTML = 'Oko A-C = ' + ac.toFixed(2);
+ }
+</script>
+ <h1>Wszystko o trójkącie</h1>
+ <br>
+ A(xa_oko, ya_oko):<br>
+ <input type="text" id="xa_oko" value="1"><br>
+ <input type="text" id="ya_oko" value="2"><br>
+ <br>
+ B(xb_oko, yb_oko):<br>
+ <input type="text" id="xb_oko" value="5"><br>
+ <input type="text" id="yb_oko" value="2"><br>
+ <br>
+ C(xc_oko, yc_oko):<br>
+ <input type="text" id="xc_oko" value="3"><br>
+ <input type="text" id="yc_oko" value="6"><br>
+ <br>
+ <input type="button" value="Oblicz Oko AB" onclick="AB_kry()"><br>
+ <input type="button" value="Oblicz Oko BC" onclick="BC_kry()"><br>
+ <input type="button" value="Oblicz Oko AC" onclick="AC_kry()"><br>
+ <div id="nazwa"></div>
+ <br>
+ <input type="button" value="zamknij okno" onclick="window.close()"/>
+</body>
+</html>
+    </textarea>
+</body>
+</html>

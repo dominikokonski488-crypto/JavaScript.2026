@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>zad.24_kod</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f3f3f3; padding: 20px; }
+        textarea { width: 100%; height: 500px; font-size: 16px; font-family: Consolas, monospace; }
+    </style>
+</head>
+<body>
+    <h2>Zadanie 24 - kod</h2>
+    <textarea readonly>
+<!DOCTYPE html>
+ <head>
+ <title> proste obliczenia</title>
+ <meta charset="utf-8">
+ </head>
+<body>
+<div style="color:red;font-size:50px;">
+ <script language="JavaScript">
+var x1_Oko=prompt("x1=","");
+var x2_Oko=prompt("x2=","");
+ var x1_Oko_rad=(Math.PI* x1_Oko)/180;
+ var x2_Oko_rad=(Math.PI* x2_Oko)/180;
+ var y1_Oko=3*Math.pow(x1_Oko, (7/9));
+ var y2_Oko=2*Math.cos(x1_Oko_rad)+3*Math.sin(x1_Oko_rad);
+ var y3_Oko=Math.pow(Math.pow(x1_Oko,5)+2*Math.pow(x2_Oko,4),(1/3))*Math.abs(x1_Oko-x2_Oko);
+
+
+ document.write("x1="+x1_Oko+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp x2="+x2_Oko+"<br>" );
+ document.write("x1="+x1_Oko+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp x1="+x1_Oko_rad.toFixed(2)+"<br>" );
+ document.write("y1="+y1_Oko.toFixed(2)+"<br>");
+ document.write("y2="+y2_Oko.toFixed(2)+"<br>");
+ document.write("y3="+y3_Oko.toFixed(2)+"<br>");
+ </script>
+</div>
+<input type="button" value="zamknij okno" onclick="window.close()"/>
+</body>
+</html>
+    </textarea>
+</body>
+</html>

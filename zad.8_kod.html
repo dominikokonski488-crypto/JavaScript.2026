@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>zad.8_kod</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f3f3f3; padding: 20px; }
+        textarea { width: 100%; height: 500px; font-size: 16px; font-family: Consolas, monospace; }
+    </style>
+</head>
+<body>
+    <h2>Zadanie 8 - kod</h2>
+    <textarea readonly>
+<!DOCTYPE html>
+<head>
+    Zastosowanie:
+Jest używany, jeśli chcemy zapytać użytkownika o weryfikacje, lub akceptację jakichś danych.<br>
+Użytkownik musi nacisnąć „OK.” w celu akceptacji bądź „Cancel” w celu odrzucenia.<br> Jeżeli zostanie
+wybrane „OK.” metoda zwraca true w przeciwnym wypadku false<br>
+<script type="text/javascript">
+ function show_confirm()
+ {
+ var r=confirm("Naciśnij klawisz");
+ if (r==true)
+ { document.write("Nacisnąłeś OK!"); }
+ else
+ { document.write("Nacisnąłeś Cancel!"); }
+ }
+</script>
+</head>
+<body>
+ <input type="button" onclick="show_confirm()" value="Pokaż confirm box" />
+<input type="button" value="zamknij okno" onclick="window.close()"/>
+</body>
+</html> 
+    </textarea>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>zad.9_kod</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f3f3f3; padding: 20px; }
+        textarea { width: 100%; height: 500px; font-size: 16px; font-family: Consolas, monospace; }
+    </style>
+</head>
+<body>
+    <h2>Zadanie 9 - kod</h2>
+    <textarea readonly>
+<!DOCTYPE html>
+ <head>
+    Zastosowanie:
+Jest używany kiedy użytkownik ma wpisać coś np. zanim wejdzie w dany moduł strony.<br> Np. hasło.
+Użytkownik po wpisaniu wartość może nacisnął „OK.” <br>albo „Cancel” Jeżeli użytkownik kliknie „OK.”
+metoda zwraca wpisaną wartość, a w przeciwnym wypadku zwraca null. <br>
+ <script type="text/javascript">
+ function show_prompt()
+ {
+ var name=prompt("Napisz imię","Imię Nazwisko");
+ if (name!=null && name!="")
+ {
+ document.write("Witaj " + name + "! jak się masz?");
+ }
+ }
+ </script>
+</head>
+<body>
+ <input type="button" onclick="show_prompt()" value="Pokaż prompt box" />
+ <input type="button" value="zamknij okno" onclick="window.close()"/>
+</body>
+</html> 
+    </textarea>
+</body>
+</html>
