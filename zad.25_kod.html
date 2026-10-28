@@ -1,40 +1,28 @@
+<textarea>
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>zad.25_kod</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: #f3f3f3; padding: 20px; }
-        textarea { width: 100%; height: 500px; font-size: 16px; font-family: Consolas, monospace; }
-    </style>
-</head>
 <body>
-    <h2>Zadanie 25 - kod</h2>
-    <textarea readonly>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Zadanie 25</title>
-</head>
-<body>
-<div style="color:blue;font-size:36px;">Zadanie 25</div>
-<script language="JavaScript">
-var a_Oko = parseFloat(prompt("Podaj a=", "0"));
-var b_Oko = parseFloat(prompt("Podaj b=", "0"));
-var suma_Oko = a_Oko + b_Oko;
-var roznica_Oko = a_Oko - b_Oko;
-var iloczyn_Oko = a_Oko * b_Oko;
 
-document.write("a = " + a_Oko + "<br>");
-document.write("b = " + b_Oko + "<br>");
-document.write("suma = " + suma_Oko.toFixed(2) + "<br>");
-document.write("różnica = " + roznica_Oko.toFixed(2) + "<br>");
-document.write("iloczyn = " + iloczyn_Oko.toFixed(2) + "<br>");
+<script>
+// Autor: uczen
+
+let No = Number(prompt("Podaj No [sztuk]:"));
+let t = Number(prompt("Podaj t [lat]:"));
+let T12 = Number(prompt("Podaj T1/2 [lat]:"));
+
+let lambda = Math.log(2) / T12;
+let N = No * Math.pow(Math.E, -lambda * t);
+
+document.write("<div style='color:navy; font-size:36px;'>");
+document.write("N0=" + No.toFixed(0) + " [sztuk]<br>");
+document.write("t=" + t.toFixed(0) + " [lat]<br>");
+document.write("T1/2=" + T12.toFixed(0) + " [lat]<br>");
+document.write("Lambda=" + lambda.toFixed(8) + " [1/rok]<br>");
+document.write("N=" + N.toFixed(7) + " [sztuk]");
+document.write("</div>");
+
 </script>
-<input type="button" value="zamknij okno" onclick="window.close()"/>
+
 </body>
 </html>
     </textarea>
-</body>
-</html>
