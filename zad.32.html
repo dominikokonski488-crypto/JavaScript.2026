@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title size="2xl">Zadanie 32 – Nazwisko ucznia np. Kowalski</title>
+ </head>
+<body bgcolor="yellow">
+ <div style="color:green;font-size:36px;">
+ <script type="text/javascript">
+ function klient(rodzaj_K,marka_K,cena_K,) //początek konstruktora
+{
+this.rodzaj=rodzaj_K;
+this.marka=marka_K;
+this.cena=cena_K;
+} //koniec konstruktora
+ klient.prototype.wypisz = function () //definicja metody
+ {
+ alert(this.rodzaj + " " + this.marka+ " " + this.cena+ " " );
+ };
+var osoba1 = new klient("Jeansy", "Levis", "180zł"); // nowy obiekt osoba1
+var osoba2 = new klient("dresy", "Nike", "167zł"); // nowy obiekt osoba2
+osoba1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby1 z użyciem alert();
+osoba2.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby2 z użyciem alert();
+ document.write("Moje nazwisko to OKOŃSKI mam numer 13 a obiekt to klient"+"<br>");
+ document.write("dostęp do pól osoba1 i osoba2"+"<br>");
+ document.write("czyli wypisanie danych"+"<br>");
+// poniżej dostęp/wypisanie danych do pól osoby1 i osoba2
+document.write("spodnie pierwszy =>"+" "+osoba1.rodzaj+" "+osoba1.marka+" "+osoba1.cena+"<br>");
+document.write("Spodnie drugi =>"+" "+osoba2.rodzaj+" "+osoba2.marka+" "+osoba2.cena+"<br>");
+ </script>
+</div>
+<div style="color:blue;font-size:51px;"><br>
+programowanie obiektowe:
+Słowo kluczowe prototype stosowane jest do:<br>
+ do utworzenia dodatkowej funkcjonalnośd, dla obiektu np Stringczy Array. tutaj: <br>
+ <br> String.prototype.firstCapital pierwsza litera duża. <br>
+ String.prototype.mixLetterSize litery nieparzyste małe, parzyste duże.<br>
+<br> 
+Słowo kluczowe new stosowane jest do:<br>
+Słowo kluczowe new służy do tworzenia obiektu na podstawie konstruktora. <br>
+</div>
+</body>
+</html>
