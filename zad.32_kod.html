@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>zad.32_kod</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f3f3f3; padding: 20px; }
+        textarea { width: 100%; height: 600px; font-size: 16px; font-family: Consolas, monospace; }
+    </style>
+</head>
+<body>
+    <h2>Zadanie 32 - kod</h2>
+    <textarea readonly>&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;title&gt;Zadanie 32 – Okoński&lt;/title&gt;
+&lt;/head&gt;
+&lt;body bgcolor="yellow"&gt;
+&lt;script type="text/javascript"&gt;
+function klient(rodzaj_K, marka_K, cena_K) {
+    this.rodzaj = rodzaj_K;
+    this.marka = marka_K;
+    this.cena = cena_K;
+}
+
+klient.prototype.wypisz = function () {
+    alert(this.rodzaj + " " + this.marka + " " + this.cena);
+};
+
+var osoba1 = new klient("Jeansy", "Levis", "180 zł");
+var osoba2 = new klient("dresy", "Nike", "167 zł");
+
+osoba1.wypisz();
+osoba2.wypisz();
+
+document.write("spodnie pierwszy =&gt; " + osoba1.rodzaj + " " + osoba1.marka + " " + osoba1.cena + "&lt;br&gt;");
+document.write("spodnie drugi =&gt; " + osoba2.rodzaj + " " + osoba2.marka + " " + osoba2.cena + "&lt;br&gt;");
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </textarea>
+</body>
+</html>
